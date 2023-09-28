@@ -1,13 +1,16 @@
-// import React, { useState } from 'react';
+import React, { useState } from "react";
 
-// export function FormComponent() {
-//   const [value, setValue] = useState("");
+export function FormComponent() {
+  const [value, setValue] = useState("");
 
-//   const handleChange = (event) => {
-//     setValue(event.target.value);
-//   };
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setValue(event.target.value);
+  };
 
-//   return (
-//     <input type="text" value={value} onChange={handleChange} />
-//   );
-// }
+  return (
+    <div style={{backgroundColor:'#eed0ed'}}>
+      <p>Task 3</p>
+      <input type="text" value={value} onChange={handleChange} />
+    </div>
+  );
+}

@@ -41,7 +41,7 @@ export function Observer({ children, onContentEndVisible }: Props) {
   }, [onContentEndVisible]);
 
   return (
-    <div>
+    <div style={{backgroundColor:'#d0dcee'}}>
       {children}
       <div ref={endContentRef} />
     </div>
