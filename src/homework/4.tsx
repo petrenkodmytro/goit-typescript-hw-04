@@ -62,10 +62,10 @@ function MenuComponent({ menus }: PropsMenu) {
   const { selectedMenu } = useContext(MenuSelectedContext);
 
   return (
-    <div style={{backgroundColor:'#eeeed0'}}>
-    <p>Task 4</p>
+    <div style={{ backgroundColor: "#eeeed0" }}>
+      <p>Task 4</p>
       {menus.map((menu) => (
-        <div style={{border:'solid 1px blue', marginBottom:'5px'}} key={menu.id} onClick={() => onSelectedMenu({ id: menu.id })}>
+        <div style={{ border: "solid 1px blue", marginBottom: "5px" }} key={menu.id} onClick={() => onSelectedMenu({ id: menu.id })}>
           {menu.title} {selectedMenu.id === menu.id ? "Selected" : "Not selected"}
         </div>
       ))}

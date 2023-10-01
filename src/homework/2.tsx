@@ -2,7 +2,7 @@ import React, { useReducer } from "react";
 
 type State = {
   isRequestInProgress: boolean;
-  requestStep: string;
+  requestStep: "start" | "pending" | "finished" | "idle";
 };
 type Action = {
   type: "START_REQUEST" | "PENDING_REQUEST" | "FINISH_REQUEST" | "RESET_REQUEST";
@@ -47,7 +47,7 @@ export function RequestComponent() {
   };
 
   return (
-    <div style={{backgroundColor:'#d0ebee'}}>
+    <div style={{ backgroundColor: "#d0ebee" }}>
       <p>Task 2</p>
       <button onClick={startRequest}>Почати запит</button>
       <button onClick={resetRequest}>Скинути запит</button>

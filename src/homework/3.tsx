@@ -8,7 +8,7 @@ export function FormComponent() {
   };
 
   return (
-    <div style={{backgroundColor:'#eed0ed'}}>
+    <div style={{ backgroundColor: "#eed0ed" }}>
       <p>Task 3</p>
       <input type="text" value={value} onChange={handleChange} />
     </div>
